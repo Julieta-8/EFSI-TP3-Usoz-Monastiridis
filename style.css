@@ -1,3 +1,16 @@
+.win {
+  background-image: url("tu-gif.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: 50%;
+}
+.lose {
+  background-image: url("game-over.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: 50%;
+}
+
 :root{
 	--bg-1: #0f172a;
 	--bg-2: #0b3d91;
