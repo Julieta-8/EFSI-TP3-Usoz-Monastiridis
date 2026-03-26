@@ -29,6 +29,10 @@ function checkGuess() {
         message.innerText = "¡Ganaste!"
        
   main.classList.add("win");
+
+  setTimeout(() => {
+    main.classList.remove("win"); 
+  }, 3000);
         reset.addEventListener('click', () => {
           input.value = '';
           message.innerText = '';
@@ -37,7 +41,7 @@ function checkGuess() {
            attempts = 0;
            Numeros.innerText = '';
            attemptsText.innerText = '';
-         main.classList.remove("win"); 
+        
         });
       }
 
@@ -54,6 +58,9 @@ function checkGuess() {
    else{
   message.innerText = (`Perdiste, te pasaste de intentos ${secretNumber} `)
    main.classList.add("lose");
+     setTimeout(() => {
+    main.classList.remove("lose"); 
+  }, 3000);
    reset.addEventListener('click', () => {
           input.value = '';
           message.innerText = '';
@@ -62,7 +69,7 @@ function checkGuess() {
            attempts = 0;
            Numeros.innerText = '';
            attemptsText.innerText = '';
-         main.classList.remove("lose"); 
+    
         });
   }
 
